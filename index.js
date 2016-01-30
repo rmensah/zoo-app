@@ -13,5 +13,12 @@ connection.connect(function(err) {
             console.error('error connecting: ' + err.stack);
             return;
         };
-        console.log('connected as id ' + connection.threadId);
+        //clearconsole.log('connected as id ' + connection.threadId);
+  var zoo = {
+		welcome: "Welcome to the Zoo And Friends App~!",
+			function(welcome){
+				console.log(this.welcome);
+				return;
+	}
+}
     });
