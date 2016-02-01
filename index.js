@@ -43,8 +43,11 @@ This will get clearer as we move on.
 	var add = function(input_scope) {
 		var currentScope = input_scope;
 		console.log('To add an animal to the zoo please fill out the following form for us!');
-		prompt.get(name, type, age) {
-			connection.query("")
+		var prompt = require('prompt');
+		prompt.start();
+		prompt.get(['name','type', 'age'], function(err, result) {
+			connection.query('INSERT INTO animal, (name, type, age) VALUES (?,?,?)';
+			})
 		}
 	}
 
